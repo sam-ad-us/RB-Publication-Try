@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB Publication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>RB Publication</h1>
+            <nav class="main-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#stories" class="nav-link">Stories</a>
+                <a href="#poems" class="nav-link">Poems</a>
+                <a href="#admin" class="nav-link admin-link">Admin</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <section id="home" class="hero-section">
+                <h2>Welcome to RB Publication</h2>
+                <p>Discover amazing stories, articles, news, and poems</p>
+            </section>
+            
+            <section id="news" class="content-section">
+                <h2>Latest News</h2>
+                <div class="content-grid" id="news-grid">
+                    <!-- News content will be loaded here -->
+                </div>
+            </section>
+            
+            <section id="articles" class="content-section">
+                <h2>Articles</h2>
+                <div class="content-grid" id="articles-grid">
+                    <!-- Articles content will be loaded here -->
+                </div>
+            </section>
+            
+            <section id="stories" class="content-section">
+                <h2>Stories</h2>
+                <div class="content-grid" id="stories-grid">
+                    <!-- Stories content will be loaded here -->
+                </div>
+            </section>
+            
+            <section id="poems" class="content-section">
+                <h2>Poems</h2>
+                <div class="content-grid" id="poems-grid">
+                    <!-- Poems content will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Admin Panel Modal -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="admin-login">
+                <h2>Admin Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="admin-panel" style="display: none;">
+                <h2>Admin Panel</h2>
+                <div class="admin-content">
+                    <div class="add-content-section">
+                        <h3>Add New Content</h3>
+                        <form id="add-content-form">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category:</label>
+                                <select id="category" name="category" required>
+                                    <option value="news">News</option>
+                                    <option value="article">Article</option>
+                                    <option value="story">Story</option>
+                                    <option value="poem">Poem</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Content:</label>
+                                <textarea id="content" name="content" rows="10" required></textarea>
+                            </div>
+                            <button type="submit">Add Content</button>
+                        </form>
+                    </div>
+                    <div class="manage-content-section">
+                        <h3>Manage Content</h3>
+                        <div id="content-list">
+                            <!-- Content will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 RB Publication. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

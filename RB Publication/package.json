@@ -1,0 +1,18 @@
+{
+  "name": "rb-publication",
+  "version": "1.0.0",
+  "description": "RB Publication - C++ Web Application with Admin Panel",
+  "main": "build/rb_publication",
+  "scripts": {
+    "build": "mkdir -p build && cd build && cmake .. && make",
+    "run": "./build/rb_publication",
+    "dev": "npm run build && npm run run",
+    "install-deps": "vcpkg install crow"
+  },
+  "keywords": ["cpp", "web", "publication", "admin-panel"],
+  "author": "RB Publication",
+  "license": "MIT",
+  "dependencies": {
+    "crow": "^1.0+5"
+  }
+}
